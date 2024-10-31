@@ -1,0 +1,38 @@
+.pinkDiv {
+  background: #ffe8d0;
+  width: 100px;
+  height: 200px;
+}
+.positionParts {
+  margin-top: 115px;
+  position: relative;
+}
+.cakeImg img {
+  width: 156px;
+  height: 279px;
+}
+.cakeImg {
+  right: 32px;
+  position: absolute;
+  top: -22px;
+}
+.restaurantImg img {
+  width: 137px;
+  height: 195px;
+  box-shadow: 20px 0px 30px 3px #00000080;
+}
+.restaurantImg {
+  position: absolute;
+  top: 45px;
+  right: -38px;
+}
+.mealsImg img {
+  width: 137px;
+  height: 195px;
+  box-shadow: 20px 0px 30px 3px #00000080;
+}
+.mealsImg {
+  right: 164px;
+  position: absolute;
+  top: 20px;
+}

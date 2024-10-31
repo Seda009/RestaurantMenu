@@ -1,0 +1,77 @@
+.burgerCard {
+  width: 300px;
+  height: 410px;
+  background-color: white;
+  position: relative;
+}
+.recommended {
+  width: 124px;
+  height: 36px;
+  top: 3409px;
+  left: 165px;
+  background: #d67e34;
+  color: white;
+  border: none;
+}
+.burgerImg img {
+  width: 125px;
+  height: 108px;
+  border-radius: 50%;
+  margin: 0 auto;
+}
+.burgerImg {
+  display: flex;
+  justify-content: center;
+  margin-top: 60px;
+}
+.numCircle {
+  top: 109px;
+  background: #d67e34;
+  left: 152px;
+  width: 54px;
+  height: 49px;
+  border-radius: 50%;
+  color: white;
+  font-family: Cookie;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 33.27px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  border: 8px solid white;
+}
+.titleBurger p {
+  font-family: Tinos;
+  font-size: 30px;
+  font-weight: 400;
+  margin: 0 auto;
+  line-height: 29.9px;
+  text-align: center;
+}
+.titleBurger {
+  margin-top: 20px;
+}
+.text p {
+  font-family: Open Sans;
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 21.79px;
+  text-align: center;
+  color: black;
+}
+.order button {
+  width: 220px;
+  height: 50px;
+  border: none;
+  background: #d67e34;
+  color: white;
+}
+.order {
+  display: flex;
+  justify-content: center;
+}
+.recommendedDiv {
+  position: absolute;
+}

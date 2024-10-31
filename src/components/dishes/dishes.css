@@ -1,0 +1,26 @@
+.title {
+  font-family: Tinos;
+  font-size: 44px;
+  font-weight: 400;
+  text-align: center;
+  margin-top: 120px;
+}
+
+.title span {
+  color: orange;
+}
+.dishImgs {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+.pizzaImg img {
+  width: 345px;
+  height: 341px;
+  transform: rotate(180deg);
+}
+.miniHums {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}

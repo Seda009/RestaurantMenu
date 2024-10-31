@@ -1,0 +1,50 @@
+.welcomeText p {
+  font-family: Tinos;
+  font-size: 50px;
+  font-weight: 400;
+  line-height: 1px;
+  text-align: left;
+  color: #d67e35;
+  margin-left: 170px;
+}
+.restaurantText p {
+  font-family: Tinos;
+  font-size: 66px;
+  font-weight: 400;
+  text-align: left;
+  margin-left: 189px;
+  line-height: 1px;
+  color: #d67e35;
+}
+.foodHouse {
+  display: flex;
+  gap: 10px;
+  margin-left: 227px;
+  align-items: center;
+}
+.bestrestaurantText {
+  font-family: Open Sans;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 24.51px;
+  text-align: left;
+  color: white;
+}
+.border {
+  height: 1px;
+  width: 60px;
+  background-color: white;
+}
+.buttonView button {
+  width: 137px;
+  height: 47px;
+  background: #ff7400;
+  color: white;
+  border: 0px;
+  text-align: center;
+  margin-left: 310px;
+  margin-top: 25px;
+}
+.welcomeParagraphs {
+  padding-top: 60px;
+}

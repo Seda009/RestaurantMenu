@@ -1,0 +1,5 @@
+.historyPart {
+  display: flex;
+  margin-top: 300px;
+  justify-content: space-around;
+}

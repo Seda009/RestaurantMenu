@@ -1,0 +1,22 @@
+.MaxiBurger {
+  background-image: url(https://s3-alpha-sig.figma.com/img/5e04/0829/576b39d7185ad7d3680c3b0301ea4ba5?Expires=1730678400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=BIKBE-HiTcGKc6SFGVUAd9UKj3luPiJndW6qWY~I24szKjcVtMobaWArTNi-55lOVdNd9j5vVPVTGxwQYptcKYLkcjoLCf3vaHrw~k4V0hkrNzjJCBoJjmkUgMRLhjqgr-9gPCMi01QP8DeikOAfVor7MuLGyyjtfZ7329sT21lV215drdCjBHPsXqDdhSUya54K1m9hTuuOLQ1tFEMGiF-~dtbYdb4NTL8g7am-XICvJgotKDH59EKZtWwtdlDkW50DAd3en32cknO9ZDSCtfY5TKfkZw~OaxGINnoEIluYYiIflkGBtVVhg~Sr~qWM24wQIxhcm-tj5afrLpGjgQ__);
+  background-size: 100% 100%;
+  height: 600px;
+  margin-top: 100px;
+}
+.ourMenu {
+  font-family: Tinos;
+  font-size: 44px;
+  font-weight: 400;
+  line-height: 62.09px;
+  text-align: left;
+  color: white;
+  text-align: center;
+  padding-top: 40px;
+}
+.BurgerPart {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}

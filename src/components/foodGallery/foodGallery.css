@@ -1,0 +1,32 @@
+.galleryText {
+  font-family: Tinos;
+  font-size: 44px;
+  font-weight: 400;
+  text-align: center;
+  margin-top: 120px;
+}
+
+.galleryText span {
+  color: orange;
+}
+.dinnerImg {
+  width: 515px;
+  height: 261px;
+}
+
+.imagesDiv {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 20px;
+}
+.imgPart1 {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+.coffeeImg,
+.soup {
+  height: 261px;
+  width: 248px;
+}

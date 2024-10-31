@@ -1,0 +1,12 @@
+.welcomePart {
+  background-image: url(https://s3-alpha-sig.figma.com/img/16b7/64de/8fefb65833b008164ebb4cf2ff06ad13?Expires=1729468800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=D9ECXKE2PbqvZniCIs5VkAzz9~lwB~tAL5ScDOh~GN6mHSwKDVfSNFqVkdsWqj~OaFvjG7QUzVeNv3F5vjx9zuQPgpQ~leGgAY05k7Ghr-EB9YC1oqQ95wvNRReGGFMTbi0dyalESUdhAiV0Mor-~c2MldQaJ9lCyGVIBpT2cXzBEzmZ6c-fpwkxsPkiWhTfhXVM8SIOWPjcVf5~3Hl5WD9wSfQPy7uGaVUJ3axjDFXEGZ5~CiepI~yTcAdEDhSKtNvQ83pRKm-ystfLO9dcum2juju3dfo9W-O-6Pvd6ETarCI4cq-OHIvC4UuKyP7hAAvw-ugwdavf7yVju14aVw__);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  height: 610px;
+}
+.featuresCard {
+  display: flex;
+  gap: 25px;
+  justify-content: center;
+  margin-top: 54px;
+}

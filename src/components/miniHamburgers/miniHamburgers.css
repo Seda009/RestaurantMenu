@@ -1,0 +1,9 @@
+.humImg img {
+  width: 120px;
+  height: 100px;
+}
+.humCart {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}

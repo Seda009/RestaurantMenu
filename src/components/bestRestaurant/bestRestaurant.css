@@ -1,0 +1,72 @@
+.orderDiv {
+  background-image: url(https://s3-alpha-sig.figma.com/img/e877/c285/d7439e2f66295b6aa0d2514ea2a28d6f?Expires=1730678400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=YDqrPh0z2tSbFd2rzU9XuN8cnxHb9ECaek5sFaG5NVeKPllCdiZvGf25R~C7wgIj86kmSorKnuu~5fMizl72ngYiIzlnfbCWXLxz7m3Cf~rNCZa83-9Edi4iNecCf4mZFmDSYsXBIZ0xFlas-LObGX~Zs4UqoxBPSV3qyqx81Ayb0~vzbtoO2EqlK9fw03OGjuLMucoNg2uZ0t2rpVkPdLz1bF7cfInS838hUoVBZXrZoG1ARlQg49nkSynhBux~5Awz7qRm8wCxf~I7k~YYyqPnvQzmKg58fBzDuNzn1yQZ7nrNlP3UKatVND2bsrL2TinMMX-6LSFO4p6zRdxZpA__);
+  background-size: 100% 100%;
+  height: 257px;
+  margin-top: 150px;
+  /* background-color: rgb(41, 41, 41); */
+  position: relative;
+  padding-top: 40px;
+}
+.orderDiv::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5); /* Adjust opacity as needed */
+  pointer-events: none; /* Allows clicks to pass through the overlay */
+}
+.orderPart p,
+.sale p {
+  position: relative; /* Makes it a positioned element */
+  z-index: 2; /* Higher z-index to be above the overlay */
+  color: white; /* Change color as needed for better visibility */
+}
+.orderPart p {
+  font-family: Tinos;
+  font-size: 42px;
+  font-weight: 400;
+  line-height: 59.79px;
+  text-align: left;
+  color: #d67e34;
+}
+.popularRest {
+  width: 601px;
+  height: 120px;
+}
+.sale {
+  width: 542px;
+  height: 33px;
+  top: 2011px;
+  left: 165px;
+  gap: 0px;
+  opacity: 0px;
+}
+.sale p {
+  font-family: Open Sans;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 32.68px;
+  text-align: left;
+  color: white;
+}
+.orderDiv {
+  display: flex;
+  justify-content: space-around;
+}
+.orderButton button {
+  width: 157px;
+  height: 47px;
+  background: #ff7400;
+  border: none;
+  color: white;
+  position: relative;
+  z-index: 2;
+}
+.orderButton {
+  padding-top: 130px;
+}
+/* .blackBackground {
+  background: rgb(41, 41, 41);
+} */

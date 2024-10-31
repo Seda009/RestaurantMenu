@@ -1,0 +1,64 @@
+.spanMenu span {
+  font-family: Open Sans;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 19.07px;
+  text-align: left;
+  color: white;
+}
+.middlePart {
+  display: flex;
+  gap: 25px;
+}
+.MenuPart {
+  padding-top: 64px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 89px;
+  padding-right: 89px;
+}
+.borderLine {
+  width: 1px;
+  height: 50px;
+  background: white;
+}
+.spanNum {
+  color: white;
+}
+.phone {
+  display: flex;
+  gap: 8px;
+}
+.ContactUs span {
+  font-size: 14px;
+  color: white;
+}
+.contact {
+  display: flex;
+  flex-direction: column;
+}
+.Button button {
+  width: 157px;
+  height: 47px;
+  top: 59px;
+  left: 1118px;
+  gap: 0px;
+  opacity: 0px;
+  background: #ff7400;
+  font-family: Open Sans;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 19.07px;
+  text-align: left;
+  color: white;
+  border: 0px;
+  margin-left: 25px;
+  text-align: center;
+}
+.MenuPart,
+.menuDiv {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+}
