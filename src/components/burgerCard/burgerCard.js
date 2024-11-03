@@ -1,6 +1,22 @@
 import "./burgerCard.css";
 
+import React, { useState } from "react";
+
 function BurgerCard(props) {
+  const [count, setCount] = useState(0);
+
+  let handleIncreament = () => {
+    setCount(count + 1);
+    console.log(count, "count");
+  };
+
+  let countDawn = () => {
+    if (count == 0) {
+      setCount(0);
+    } else {
+      setCount(count - 1);
+    }
+  };
   return (
     <div className="burgerCard">
       <div className="recommendedDiv">
@@ -24,6 +40,11 @@ function BurgerCard(props) {
       </div>
       <div className="order">
         <button>{props.button}</button>
+      </div>
+      <div className="orderCount">
+        <button onClick={countDawn}>-</button>
+        <span>{count}</span>
+        <button onClick={handleIncreament}>+</button>
       </div>
     </div>
   );

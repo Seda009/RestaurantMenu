@@ -7,6 +7,7 @@ import BurgerMaxi from "./components/burgerMaxi/burgerMaxi.js";
 import GreyPart from "./components/greyPart/greyPart.js";
 import GalleryFood from "./components/foodGallery/foodGallery.js";
 import Cookers from "./components/cookers/cookers.js";
+import Counter from "./components/class.js";
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
       <GreyPart></GreyPart>
       <GalleryFood></GalleryFood>
       <Cookers></Cookers>
+      <Counter></Counter>
     </div>
   );
 }
