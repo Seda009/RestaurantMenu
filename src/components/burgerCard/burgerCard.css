@@ -1,6 +1,6 @@
 .burgerCard {
   width: 300px;
-  height: 410px;
+  height: 440px;
   background-color: white;
   position: relative;
 }
@@ -81,4 +81,20 @@
   justify-content: center;
   align-items: center;
   margin-top: 20px;
+}
+.addButton {
+  margin-left: 5px;
+}
+.plusButton {
+  background: #d67e34;
+  border: none;
+  width: 29px;
+  height: 22px;
+}
+.addButton {
+  color: black;
+  background-color: rgb(206, 206, 206);
+  width: 60px;
+  height: 22px;
+  border: none;
 }

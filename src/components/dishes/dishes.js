@@ -9,7 +9,7 @@ function Dishes() {
       </p>
       <div className="dishImgs">
         <div className="pizzaImg">
-          <img src="https://s3-alpha-sig.figma.com/img/eec3/2571/057ff3665c346c8148ff94f69519f217?Expires=1730678400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=U6rGZD99yOYTOA6tAf~2XPHrHAzmoiJjy332KGxRDkqm7OKjY~qo6KhI9A5KlpcmrXQq4j20bZWUtRDG~j8EtN3AMiJEG2~oRd13XC1PEv415XygzEg187f7FIOeTLnRbrgexgyKsLqRhw5zvyH2q29bPdL9poxlcK21qUcXcnRWO8larF5RJTe1OkOYAoxqwrrbPii~RrJWFWA~blG6S1VBD1pCPVvCt0Rl5rQG5aV1eRLu7Pp2rf7N0XE0DfSuX6E~1rZ6hybyPRO1h6Q-PLDomDhRHqRmcw9HzKB12afoBOeQg69AuJSBnczECONUIgi82B2cyv74SL6oAC9mvQ__"></img>
+          <img src="https://s3-alpha-sig.figma.com/img/eec3/2571/057ff3665c346c8148ff94f69519f217?Expires=1732492800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=cG7JhnMyZLtHXplG3BnMLwlEnd3Rjl1AsMiGslR7APuJE8HFvYepjiY1QsI9UcxYKIKjtEKWIpzL4ij00cCoFYI6sTLB2PI4Vdt0JDQLhbccmAUdTbh3UAMiUckQ5pj3hWdcRaxYIfs2C9oQXYmkvU6ydpqtpXHkLHCxl6DgLiY7MoWhb6LyqAxMcm-cF8UQiKsw5ZemlLVoFi3LnVg2fL6F07HVTB2viw~h4sAb1OQsbXKBLwsDXg1A3Me9NnRGvcz8qhYJYYa3euFfsAOg-s0iVgyVPCGe0OLVP6fqUmxNSxqfsfTP0eYaN4Mt~KnUvYz2o1vZyUldi7289ckw3Q__"></img>
         </div>
         <div className="miniHums">
           <div>

@@ -2,10 +2,11 @@ import "./menu.css";
 import logo from "../images/LOGO (1).png";
 import icon from "../images/cart.png";
 import phone from "../images/phone.png";
+import BurgerCard from "../burgerCard/burgerCard";
 
 import React, { useState } from "react";
 
-function MenuBar() {
+function MenuBar({ count }) {
   // const [popup, setPopup] = useState(false);
 
   // const popUpOpen = () => {
@@ -46,6 +47,9 @@ function MenuBar() {
             </div>
             <div className="forcartLogo">
               <img src={icon} onClick={popUpOpen}></img>
+              <div style={{ color: "white" }} className="countButton">
+                {count}
+              </div>
             </div>
           </div>
 

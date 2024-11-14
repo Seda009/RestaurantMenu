@@ -73,24 +73,31 @@
   animation: popUp 2s;
 }
 @keyframes popUp {
-  0% {
+  from {
     width: 200px;
     height: 200px;
   }
-  30% {
-    width: 250px;
-    height: 250px;
-  }
-  72% {
-    width: 300px;
-    height: 300px;
-  }
-  88% {
-    width: 350px;
-    height: 350px;
-  }
-  100% {
+  to {
     width: 450px;
     height: 400px;
   }
+  /* from {
+    width: 450px;
+    height: 400px;
+  }
+  to {
+    width: 200px;
+    height: 200px;
+  } */
+}
+
+.countButton {
+  color: white;
+  position: absolute;
+  top: 84px;
+  left: 753px;
+  background: #d67e34;
+  font-size: 11px;
+  opacity: 1.5;
+  border-radius: 16%;
 }
