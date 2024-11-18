@@ -1,7 +1,14 @@
 import BurgerCard from "../burgerCard/burgerCard.js";
 import "./burgerMaxi.css";
 
-function BurgerMaxi({ count, setCount }) {
+function BurgerMaxi({
+  count,
+  setCount,
+  burgerTitle,
+  setburgerTitle,
+  burgerPrice,
+  setburgerPrice,
+}) {
   return (
     <div className="MaxiBurger">
       <p className="ourMenu">Наше меню</p>
@@ -15,6 +22,10 @@ function BurgerMaxi({ count, setCount }) {
           number="420"
           count={count}
           setCount={setCount}
+          burgerTitle={burgerTitle}
+          setburgerTitle={setburgerTitle}
+          burgerPrice={burgerPrice}
+          setburgerPrice={setburgerPrice}
         ></BurgerCard>
         <BurgerCard
           titleBurger="Гамбургер мини"
@@ -23,6 +34,10 @@ function BurgerMaxi({ count, setCount }) {
           number="460"
           count={count}
           setCount={setCount}
+          burgerTitle={burgerTitle}
+          setburgerTitle={setburgerTitle}
+          burgerPrice={burgerPrice}
+          setburgerPrice={setburgerPrice}
         ></BurgerCard>
         <BurgerCard
           titleBurger="Гамбургер дабл"
@@ -31,6 +46,10 @@ function BurgerMaxi({ count, setCount }) {
           number="530"
           count={count}
           setCount={setCount}
+          burgerTitle={burgerTitle}
+          setburgerTitle={setburgerTitle}
+          burgerPrice={burgerPrice}
+          setburgerPrice={setburgerPrice}
         ></BurgerCard>
       </div>
     </div>

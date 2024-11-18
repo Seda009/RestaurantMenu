@@ -10,6 +10,10 @@ function BurgerCard({
   titleBurger,
   recommended,
   button,
+  burgerTitle,
+  setburgerTitle,
+  burgerPrice,
+  setburgerPrice,
 }) {
   const [localCounter, setlocalCounter] = useState(0);
 
@@ -27,8 +31,10 @@ function BurgerCard({
   };
 
   let add = () => {
-    setCount(localCounter);
-    setlocalCounter(0);
+    setCount((prev) => prev + localCounter);
+    setburgerTitle((prev) => [...prev, { burgerName: titleBurger }]);
+    setburgerPrice((prev) => [...prev, { burgerNum: number }]);
+    console.log(burgerTitle);
   };
   return (
     <div className="burgerCard">

@@ -12,14 +12,38 @@ import { useState } from "react";
 
 function App() {
   const [count, setCount] = useState(0);
+  const [burgerTitle, setburgerTitle] = useState([{ burgername: "" }]);
+  const [burgerPrice, setburgerPrice] = useState([{ burgerNum: "" }]);
+  // [
+  //   {
+  //     burgerTitle: "Burgermaxi",
+  //   },
+  //   {
+  //     burgerTitle: "Burgermini",
+  //   },
+  // ];
+
   return (
     <div className="App">
       {" "}
-      <Welcome count={count}></Welcome>
+      <Welcome
+        count={count}
+        burgerTitle={burgerTitle}
+        setburgerTitle={setburgerTitle}
+        burgerPrice={burgerPrice}
+        setburgerPrice={setburgerPrice}
+      ></Welcome>
       <OurHistory></OurHistory>
       <BestRestaurant></BestRestaurant>
       <Dishes></Dishes>
-      <BurgerMaxi count={count} setCount={setCount}></BurgerMaxi>
+      <BurgerMaxi
+        count={count}
+        setCount={setCount}
+        burgerTitle={burgerTitle}
+        setburgerTitle={setburgerTitle}
+        burgerPrice={burgerPrice}
+        setburgerPrice={setburgerPrice}
+      ></BurgerMaxi>
       <GreyPart></GreyPart>
       <GalleryFood></GalleryFood>
       <Cookers></Cookers>

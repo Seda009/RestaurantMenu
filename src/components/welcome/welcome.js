@@ -3,10 +3,14 @@ import MenuBar from "../menu/menu.js";
 import WelcomeParagraphs from "../welcomeParagraphs/welcomeParagraphs.js";
 import Card from "../card/card.js";
 
-function Welcome({ count }) {
+function Welcome({ count, burgerTitle, burgerPrice }) {
   return (
     <div className="welcomePart">
-      <MenuBar count={count}></MenuBar>
+      <MenuBar
+        count={count}
+        burgerTitle={burgerTitle}
+        burgerPrice={burgerPrice}
+      ></MenuBar>
       <WelcomeParagraphs></WelcomeParagraphs>
       <div className="featuresCard">
         <Card
