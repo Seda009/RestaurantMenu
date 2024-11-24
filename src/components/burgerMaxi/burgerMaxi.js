@@ -4,53 +4,42 @@ import "./burgerMaxi.css";
 function BurgerMaxi({
   count,
   setCount,
-  burgerTitle,
-  setburgerTitle,
-  burgerPrice,
-  setburgerPrice,
+  burgerCardData,
+  setBurgerCardData,
+  selected,
+  setSelected,
 }) {
   return (
     <div className="MaxiBurger">
       <p className="ourMenu">Наше меню</p>
       <div className="BurgerPart">
         {" "}
-        <BurgerCard
-          recommended
-          titleBurger="Гамбургер макси"
-          text="Максимально толстый слой мяса"
-          button="ЗАКАЗАТЬ"
-          number="420"
-          count={count}
-          setCount={setCount}
-          burgerTitle={burgerTitle}
-          setburgerTitle={setburgerTitle}
-          burgerPrice={burgerPrice}
-          setburgerPrice={setburgerPrice}
-        ></BurgerCard>
-        <BurgerCard
-          titleBurger="Гамбургер мини"
-          text="Максимально толстый слой мяса"
-          button="ЗАКАЗАТЬ"
-          number="460"
-          count={count}
-          setCount={setCount}
-          burgerTitle={burgerTitle}
-          setburgerTitle={setburgerTitle}
-          burgerPrice={burgerPrice}
-          setburgerPrice={setburgerPrice}
-        ></BurgerCard>
-        <BurgerCard
-          titleBurger="Гамбургер дабл"
-          text="Максимально толстый слой мяса"
-          button="ЗАКАЗАТЬ"
-          number="530"
-          count={count}
-          setCount={setCount}
-          burgerTitle={burgerTitle}
-          setburgerTitle={setburgerTitle}
-          burgerPrice={burgerPrice}
-          setburgerPrice={setburgerPrice}
-        ></BurgerCard>
+        {burgerCardData.map((item) => {
+          // console.log(item);
+
+          return (
+            <BurgerCard
+              titleBurger={item.title}
+              price={item.price}
+              // console.log(item)
+              count={count}
+              setCount={setCount}
+              selected={selected}
+              setSelected={setSelected}
+            ></BurgerCard>
+          );
+        })}
+        {/* <BurgerCard
+
+        //   titleBurger="Гамбургер дабл"
+        //   text="Максимально толстый слой мяса"
+        //   button="ЗАКАЗАТЬ"
+        //   number="530"
+        //   count={count}
+        //   setCount={setCount}
+        //   burgerCardData={burgerCardData}
+        // setBurgerCardData={setBurgerCardData}
+        ></BurgerCard> */}
       </div>
     </div>
   );

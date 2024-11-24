@@ -12,8 +12,11 @@ function BurgerCard({
   button,
   burgerTitle,
   setburgerTitle,
-  burgerPrice,
+  price,
   setburgerPrice,
+  setSelected,
+  selected,
+  item,
 }) {
   const [localCounter, setlocalCounter] = useState(0);
 
@@ -31,10 +34,13 @@ function BurgerCard({
   };
 
   let add = () => {
+    // console.log(count, "count");
+    // setSelected((prev) => [...prev, item]);
+    // console.log(selected);
     setCount((prev) => prev + localCounter);
-    setburgerTitle((prev) => [...prev, { burgerName: titleBurger }]);
-    setburgerPrice((prev) => [...prev, { burgerNum: number }]);
-    console.log(burgerTitle);
+    // setburgerTitle((prev) => [...prev, { burgerName: titleBurger }]);
+    // setburgerPrice((prev) => [...prev, { burgerNum: number }]);
+    // console.log(burgerTitle);
   };
   return (
     <div className="burgerCard">
@@ -48,15 +54,15 @@ function BurgerCard({
       <div className="burgerImg">
         <img src="https://s3-alpha-sig.figma.com/img/b809/7ea6/cc3a738cc3c595dce4f51cc20347632d?Expires=1730678400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=KhZr-xTzizjgS9Ng3NeBSL1ouSH0ieXxH0NJLbFP56aPW7VhcQbFaieSHZTbEF1zM8E0uX~aNSMYrTHhxKNcHNDIivWQrFcWaaP3EFPTOlgC8dqN9l5zYnE0T5C2TGtcnCxPh40iyUrmAcXfuK0a8py5zDOtYjDdTjMqJ9-sRZlDOzsLDFkMMSDtFIZGy4XMrcN9yGtVuCNPyTYnmjUH3QtGVLKDg4LHFQHxnsi1e54CWZgEDEzPs1E9La5VcDpuiAhu5hFp1TS04wjA~ukC5U-q2HrKlyna5d-JV0ZQ-VhIcKpoaims2gs5wcjkRZESfqLykpvxQ4e8giAQE-jqqw__"></img>
       </div>
-      <div className="numCircle">{number}</div>
+      <div className="numCircle">{price}</div>
       <div className="titleBurger">
         <p>{titleBurger}</p>
       </div>
       <div className="text">
-        <p>{text}</p>
+        <p>Text</p>
       </div>
       <div className="order">
-        <button>{button}</button>
+        <button>Order</button>
       </div>
       <div className="orderCount">
         <button className="plusButton" onClick={countDawn}>

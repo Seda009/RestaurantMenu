@@ -6,9 +6,10 @@ import BurgerCard from "../burgerCard/burgerCard";
 
 import React, { useState } from "react";
 
-function MenuBar({ count, burgerTitle, burgerPrice }) {
-  console.log(burgerTitle, "burgerTitle");
-  console.log(burgerPrice);
+function MenuBar({ count, burgerTitle, burgerPrice, selected, setSelected }) {
+  // console.log(burgerTitle, "burgerTitle");
+  // console.log(burgerPrice);
+  // console.log(count, "countBasket");
   // const [popup, setPopup] = useState(false);
 
   // const popUpOpen = () => {
@@ -17,7 +18,7 @@ function MenuBar({ count, burgerTitle, burgerPrice }) {
   const [popup, setPopup] = useState(false);
 
   let popUpOpen = () => {
-    console.log(popup);
+    // console.log(popup);
     // setPopup(!popup);
     if (popup) {
       setPopup(!popup);
@@ -78,18 +79,11 @@ function MenuBar({ count, burgerTitle, burgerPrice }) {
       </div>
       {popup ? (
         <div className="popUp">
-          {burgerTitle.map((item) => {
+          {selected.map((item) => {
             return (
               <div>
-                <p>{item.burgerName}</p>
-                {/* <p>{item.burgerPrice}</p> */}
-              </div>
-            );
-          })}
-          {burgerPrice.map((item) => {
-            return (
-              <div>
-                <p>{item.burgerNum}</p>
+                <p>{item.title}</p>
+                <p>{item.price}</p>
               </div>
             );
           })}

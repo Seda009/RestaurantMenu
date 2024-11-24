@@ -3,13 +3,23 @@ import MenuBar from "../menu/menu.js";
 import WelcomeParagraphs from "../welcomeParagraphs/welcomeParagraphs.js";
 import Card from "../card/card.js";
 
-function Welcome({ count, burgerTitle, burgerPrice }) {
+function Welcome({
+  count,
+  burgerCardData,
+  setBurgerCardData,
+  selected,
+  setSelected,
+}) {
   return (
     <div className="welcomePart">
       <MenuBar
         count={count}
-        burgerTitle={burgerTitle}
-        burgerPrice={burgerPrice}
+        selected={selected}
+        setSelected={setSelected}
+        // burgerTitle={burgerTitle}
+        // burgerPrice={burgerPrice}
+        // burgerCardData={burgerCardData}
+        // setBurgerCardData={setBurgerCardData}
       ></MenuBar>
       <WelcomeParagraphs></WelcomeParagraphs>
       <div className="featuresCard">

@@ -12,8 +12,24 @@ import { useState } from "react";
 
 function App() {
   const [count, setCount] = useState(0);
-  const [burgerTitle, setburgerTitle] = useState([{ burgername: "" }]);
-  const [burgerPrice, setburgerPrice] = useState([{ burgerNum: "" }]);
+  const [selected, setSelected] = useState([]);
+  const [burgerCardData, setBurgerCardData] = useState([
+    {
+      title: "Гамбургер макси",
+      price: 420,
+      recommended: true,
+    },
+    {
+      title: "Гамбургер мини",
+      price: 460,
+      recommended: false,
+    },
+    {
+      title: "Гамбургер дабл",
+      price: 530,
+      recommended: false,
+    },
+  ]);
   // [
   //   {
   //     burgerTitle: "Burgermaxi",
@@ -28,10 +44,10 @@ function App() {
       {" "}
       <Welcome
         count={count}
-        burgerTitle={burgerTitle}
-        setburgerTitle={setburgerTitle}
-        burgerPrice={burgerPrice}
-        setburgerPrice={setburgerPrice}
+        burgerCardData={burgerCardData}
+        setBurgerCardData={setBurgerCardData}
+        setSelected={setSelected}
+        selected={selected}
       ></Welcome>
       <OurHistory></OurHistory>
       <BestRestaurant></BestRestaurant>
@@ -39,10 +55,10 @@ function App() {
       <BurgerMaxi
         count={count}
         setCount={setCount}
-        burgerTitle={burgerTitle}
-        setburgerTitle={setburgerTitle}
-        burgerPrice={burgerPrice}
-        setburgerPrice={setburgerPrice}
+        burgerCardData={burgerCardData}
+        setBurgerCardData={setBurgerCardData}
+        setSelected={setSelected}
+        selected={selected}
       ></BurgerMaxi>
       <GreyPart></GreyPart>
       <GalleryFood></GalleryFood>
