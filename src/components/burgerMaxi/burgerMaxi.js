@@ -19,12 +19,12 @@ function BurgerMaxi({
 
           return (
             <BurgerCard
+              selected={item}
               titleBurger={item.title}
               price={item.price}
-              // console.log(item)
+              // console.log(item);
               count={count}
               setCount={setCount}
-              selected={selected}
               setSelected={setSelected}
             ></BurgerCard>
           );

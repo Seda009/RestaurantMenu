@@ -16,6 +16,8 @@ function Welcome({
         count={count}
         selected={selected}
         setSelected={setSelected}
+        burgerCardData={burgerCardData}
+        setBurgerCardData={setBurgerCardData}
         // burgerTitle={burgerTitle}
         // burgerPrice={burgerPrice}
         // burgerCardData={burgerCardData}

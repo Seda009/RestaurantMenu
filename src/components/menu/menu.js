@@ -6,7 +6,15 @@ import BurgerCard from "../burgerCard/burgerCard";
 
 import React, { useState } from "react";
 
-function MenuBar({ count, burgerTitle, burgerPrice, selected, setSelected }) {
+function MenuBar({
+  count,
+  burgerTitle,
+  burgerPrice,
+  selected,
+  setSelected,
+  item,
+}) {
+  console.log(selected, "selected");
   // console.log(burgerTitle, "burgerTitle");
   // console.log(burgerPrice);
   // console.log(count, "countBasket");
@@ -82,8 +90,8 @@ function MenuBar({ count, burgerTitle, burgerPrice, selected, setSelected }) {
           {selected.map((item) => {
             return (
               <div>
-                <p>{item.title}</p>
-                <p>{item.price}</p>
+                {/* <p>{item.title}</p>
+                <p>{item.price}</p> */}
               </div>
             );
           })}

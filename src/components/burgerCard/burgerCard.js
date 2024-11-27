@@ -35,8 +35,10 @@ function BurgerCard({
 
   let add = () => {
     // console.log(count, "count");
-    // setSelected((prev) => [...prev, item]);
-    // console.log(selected);
+
+    setSelected((prev) => [...prev, item]);
+    console.log(selected.title);
+    // console.log(selected, "ss");
     setCount((prev) => prev + localCounter);
     // setburgerTitle((prev) => [...prev, { burgerName: titleBurger }]);
     // setburgerPrice((prev) => [...prev, { burgerNum: number }]);
@@ -59,10 +61,10 @@ function BurgerCard({
         <p>{titleBurger}</p>
       </div>
       <div className="text">
-        <p>Text</p>
+        <p>Максимально толстый слой мяса</p>
       </div>
       <div className="order">
-        <button>Order</button>
+        <button>ЗАКАЗАТЬ</button>
       </div>
       <div className="orderCount">
         <button className="plusButton" onClick={countDawn}>
