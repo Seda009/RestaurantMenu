@@ -9,6 +9,7 @@ function Welcome({
   setBurgerCardData,
   selected,
   setSelected,
+  img,
 }) {
   return (
     <div className="welcomePart">
@@ -18,10 +19,7 @@ function Welcome({
         setSelected={setSelected}
         burgerCardData={burgerCardData}
         setBurgerCardData={setBurgerCardData}
-        // burgerTitle={burgerTitle}
-        // burgerPrice={burgerPrice}
-        // burgerCardData={burgerCardData}
-        // setBurgerCardData={setBurgerCardData}
+        img={img}
       ></MenuBar>
       <WelcomeParagraphs></WelcomeParagraphs>
       <div className="featuresCard">

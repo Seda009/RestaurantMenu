@@ -3,7 +3,6 @@
   background-size: 100% 100%;
   height: 257px;
   margin-top: 150px;
-  /* background-color: rgb(41, 41, 41); */
   position: relative;
   padding-top: 40px;
 }
@@ -14,14 +13,14 @@
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: rgba(0, 0, 0, 0.5); /* Adjust opacity as needed */
-  pointer-events: none; /* Allows clicks to pass through the overlay */
+  background-color: rgba(0, 0, 0, 0.5);
+  pointer-events: none;
 }
 .orderPart p,
 .sale p {
-  position: relative; /* Makes it a positioned element */
-  z-index: 2; /* Higher z-index to be above the overlay */
-  color: white; /* Change color as needed for better visibility */
+  position: relative;
+  z-index: 2;
+  color: white;
 }
 .orderPart p {
   font-family: Tinos;
@@ -67,6 +66,3 @@
 .orderButton {
   padding-top: 130px;
 }
-/* .blackBackground {
-  background: rgb(41, 41, 41);
-} */

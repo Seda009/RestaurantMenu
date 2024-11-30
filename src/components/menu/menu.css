@@ -101,3 +101,21 @@
   opacity: 1.5;
   border-radius: 16%;
 }
+
+.mapBurgerImg {
+  width: 45px;
+  height: 45px;
+  border-radius: 10px;
+}
+.basketCardsArrangement {
+  display: flex;
+  justify-content: space-between;
+}
+.imgandtitle {
+  display: flex;
+  gap: 5px;
+  align-items: center;
+}
+.burgerPrice {
+  margin-right: 10px;
+}

@@ -14,24 +14,11 @@ function MenuBar({
   setSelected,
   item,
 }) {
-  console.log(selected, "selected");
-  // console.log(burgerTitle, "burgerTitle");
-  // console.log(burgerPrice);
-  // console.log(count, "countBasket");
-  // const [popup, setPopup] = useState(false);
-
-  // const popUpOpen = () => {
-  //   setPopup(!popup);
-  // };
   const [popup, setPopup] = useState(false);
 
   let popUpOpen = () => {
-    // console.log(popup);
-    // setPopup(!popup);
     if (popup) {
       setPopup(!popup);
-
-      // useState(true);
     } else {
       setPopup(true);
     }
@@ -89,9 +76,21 @@ function MenuBar({
         <div className="popUp">
           {selected.map((item) => {
             return (
-              <div>
-                {/* <p>{item.title}</p>
-                <p>{item.price}</p> */}
+              <div className="basketCardsArrangement">
+                <div className="imgandtitle">
+                  <div>
+                    {" "}
+                    <img src={item.img} className="mapBurgerImg"></img>
+                  </div>
+                  <div>
+                    {" "}
+                    <p>{item.title}</p>
+                  </div>
+                </div>
+                <div>
+                  {" "}
+                  <p className="burgerPrice">{item.price}</p>
+                </div>
               </div>
             );
           })}

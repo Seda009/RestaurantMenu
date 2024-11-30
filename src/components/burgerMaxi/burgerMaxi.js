@@ -8,6 +8,7 @@ function BurgerMaxi({
   setBurgerCardData,
   selected,
   setSelected,
+  img,
 }) {
   return (
     <div className="MaxiBurger">
@@ -15,14 +16,13 @@ function BurgerMaxi({
       <div className="BurgerPart">
         {" "}
         {burgerCardData.map((item) => {
-          // console.log(item);
-
           return (
             <BurgerCard
-              selected={item}
+              item={item}
+              img={item.img}
               titleBurger={item.title}
               price={item.price}
-              // console.log(item);
+              selected={selected}
               count={count}
               setCount={setCount}
               setSelected={setSelected}
